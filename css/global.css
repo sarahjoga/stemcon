@@ -344,9 +344,9 @@ nav li {
 }
 
 .hero-img {
-	background: url('../images/shirt2.png') no-repeat center;
-	text-align: left;
-	height:350px;
+	text-align: center;
+	height:300px;
+	padding-top:32px;
 	background-size: auto 100%;
 	position: relative;
 	float:left;
