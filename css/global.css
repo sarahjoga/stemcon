@@ -785,7 +785,7 @@ p.about {
 
 #about .left {
 	float:none;
-	width:80%;
+	width:100%;
 }
 
 #about iframe {
@@ -798,6 +798,10 @@ p.about {
 	#about {
 		padding-top:134px;
 	}
+	#about .left {
+	float:none;
+	width:100%;
+}
 }
 
 #featured-speakers {
