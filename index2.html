@@ -144,6 +144,7 @@ body {
   .brand {
 	order:1;
 	text-align: center;
+	width:100%;
   }
   .brand img {
   	width:80%;
@@ -153,8 +154,7 @@ body {
   .navigation a { 
     text-align: center; 
     padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3); 
-    border-bottom: 1px solid rgba(0,0,0,0.1); 
+
   }
 
   
@@ -164,8 +164,7 @@ body {
     .navigation_right a { 
     text-align: center; 
     padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.3); 
-    border-bottom: 1px solid rgba(0,0,0,0.1); 
+
   }
 
   
@@ -186,7 +185,6 @@ body {
 	font-weight:700;
 	font-family: Bangers; 
 	letter-spacing: .1em; 
-	text-shadow: 2px 2px 4px #000000;
 }
 
 ul.countdown {
@@ -211,17 +209,20 @@ ul.countdown li span {
   color:#ffffff;
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 400px) {
 ul.countdown {
   width: 100%;
 }
 ul.countdown li {
   width: 140px;
 }
+.hide {
+	display:none;
+}
 }
 
 a.button, input.button {
-	border-bottom: solid 3px #ffaa00 !important;
+	border-bottom: solid 3px #ffcf24 !important;
 	border-top: none;
 	border-left: none;
 	border-right:none;
@@ -237,11 +238,34 @@ a.button, input.button {
 	font-weight: 700;
 	outline: none;
 	position: relative;
-	background-color:#ffc44d;
+	background-color:#ffe952;
 
 }
 a.button:hover, input.button:hover {
-	background-color:#ffaa00;
+	background-color:#ffcf24;
+}
+
+#sponsors {
+	background-color:#1d1d1d;
+padding-bottom:66px;
+padding-top:14px;
+	text-align: center;
+		width:100%;
+}
+
+#sponsors img {
+	padding:8px;
+}
+
+#sponsors h1 {
+	color:#6f6f6f;
+	border-bottom:solid 2px #2f2f2f;
+	font-weight: 500;
+	font-size:18px;
+	padding:4px;
+	margin-bottom:14px;
+	display:block;
+	text-align: center;
 }
 
 </style>
@@ -264,8 +288,8 @@ a.button:hover, input.button:hover {
 <div class="container">
 
 <ul class="navigation">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">About</a></li>
+  <li><a href="mission.html">Mission</a></li>
+  <li><a href="artists.html">Artists</a></li>
 </ul>
 
 
@@ -275,8 +299,9 @@ a.button:hover, input.button:hover {
 </div> 
 
 <ul class="navigation_right">
-  <li><a href="#">Products</a></li>
-  <li><a href="#">Contact</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="schedule.html">Schedule</a></li>
+  <li class="hide"><a href="https://www.facebook.com/STEMCON"><img src="images/facebook_logo.png" width="20" /></a></li>
 </ul>
 
 
@@ -284,7 +309,7 @@ a.button:hover, input.button:hover {
 
 
 <div class="headline">
-<h1>APRIL 1, 2017</h1>
+<h1 style="text-shadow: 2px 2px 4px #000000;">APRIL 1, 2017</h1>
                 	<span style="color:#cdcdcd;">STEM School &amp; Academy<br />
                 	8773  Ridgeline Blvd. 80129<br>
                 	Highlands Ranch, CO</span>
@@ -322,10 +347,8 @@ a.button:hover, input.button:hover {
 <div class="item">
 
 <div class="headline">
-<h1>Volunteer</h1>
-                	<span style="color:#2d2d2d;">STEM School &amp; Academy<br />
-                	8773  Ridgeline Blvd. 80129<br>
-                	Highlands Ranch, CO</span><br><br>
+<h1 style="color:#2d2d2d; font-size:36px;">Volunteer Today!</h1>
+                	<br><span style="color:#2d2d2d;">We need volunteers for this awesome <br>community event. It counts toward <br>your volunteer hours!</span><br><br>
                 	<a href="" class="button">Volunteer Now!</a>
 </div>
 
@@ -333,11 +356,9 @@ a.button:hover, input.button:hover {
 <div class="item">
 
 <div class="headline">
-<h1>Join In</h1>
-                	<span style="color:#2d2d2d;">STEM School &amp; Academy<br />
-                	8773  Ridgeline Blvd. 80129<br>
-                	Highlands Ranch, CO</span><br><br>
-                	<a href="" class="button">Join Now!</a>
+<h1 style="color:#2d2d2d; font-size:36px;">Calling all Artists!</h1>
+                	<br><span style="color:#2d2d2d;">Have something cool to sell? <br>Fill out the Booth Submission Form <br>to have a booth at StemFest!</span><br><br>
+                	<a href="" class="button">Start Now!</a>
 </div>
 
 </div>
