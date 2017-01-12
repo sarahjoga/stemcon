@@ -4,15 +4,402 @@
 		<title>STEMFEST - 2017</title>
 		
 		<link rel="stylesheet" type="text/css" href="css/reset.css">  <!--do reset first-->
-		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/photobooth.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/global.css"> -->
 		<meta name="viewport" content="width=device-width, 
 user-scalable=true;">
 
-<meta property="og:url" content="http://www.stemcon2016.com" />
+<meta property="og:url" content="http://www.stem-fest.org" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="STEMCON 2016 - STEM School and Academy" />
-	<meta property="og:description" content="STEM School and Academy is hosting a scholastic comic con Saturday, May 7, 2016. Our school endeavors to engage all students in an academically rigorous core curricula promoting a strong foundation in the sciences, technologies, engineering, and math relevant to real-world contexts, as well as encouraging them to have fun and utilize their imaginations!" />
-	<meta property="og:image" content="http://stemcon2016.com/images/sciencey.jpg" />
+	<meta property="og:title" content="STEMFEST 2017 - STEM School and Academy" />
+	<meta property="og:description" content="STEM School and Academy is hosting a scholastic comic con Saturday, April 1, 2017. Our school endeavors to engage all students in an academically rigorous core curricula promoting a strong foundation in the sciences, technologies, engineering, and math relevant to real-world contexts, as well as encouraging them to have fun and utilize their imaginations!" />
+	<meta property="og:image" content="http://www.stem-fest.org/images/stemconphoto.jpg" />
+
+
+
+<style type="text/css">
+@import url(http://fonts.googleapis.com/css?family=Kanit:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext);
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+body {
+	background: #ffffff; 
+	font-family: 'Kanit', Helvetica, Arial, sans-serif;
+	width:100%;
+	
+} 
+
+h1 {
+  font-size:3em; 
+  font-weight:700;
+  font-family: Bangers; 
+  letter-spacing: .1em; 
+}
+
+.wrapper-main {
+	width:100%;
+	margin:0 auto;
+}
+.wrapper {
+	width:100%;
+	margin:0 auto;	background-image: url("images/headerback_darker.jpg");
+	background-size:cover;
+}
+
+.gradient {
+	background: -webkit-linear-gradient(rgba(0,0,0,1), rgba(255,0,0,0), rgba(0,0,0,.7)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,1), rgba(255,0,0,0), rgba(0,0,0,.7)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,1), rgba(255,0,0,0), rgba(0,0,0,.7)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,1), rgba(255,0,0,0), rgba(0,0,0,.7)); /* Standard syntax (must be last) */}
+
+.gradient2 {
+  background: -webkit-linear-gradient(rgba(0,0,0,.2), rgba(255,0,0,0), rgba(0,0,0,.2)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(0,0,0,.2), rgba(255,0,0,0), rgba(0,0,0,.2)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(0,0,0,.2), rgba(255,0,0,0), rgba(0,0,0,.2)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(0,0,0,.2), rgba(255,0,0,0), rgba(0,0,0,.2)); /* Standard syntax (must be last) */}
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  justify-content: space-around;
+  width: 800px;
+  margin:0 auto;
+
+}
+
+.item {
+  width: 380px;  /* Or whatever */
+  height: 200px; /* Or whatever */
+  margin: 20px 10px 20px 10px;  /* Magic! */
+  background-color:#e6e6e6;
+}
+
+@media all and (max-width: 800px) {
+.wrapper {
+	width:100%;
+	margin:0 auto;
+}
+.container {
+	width:100%;
+	margin:0 auto;
+}
+.item {
+  width: 100%;  /* Or whatever */
+  margin: 20px 0px 0px 0px;  /* Magic! */
+}
+}
+
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  padding-top:20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation_right {
+  list-style: none;
+  margin: 0; 
+  padding-top:20px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  font-size:.9em;
+}
+
+.navigation a:hover {
+  background: #000000;
+}
+
+.navigation_right a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+  font-size:.9em;
+}
+
+.navigation_right a:hover {
+  background: #000000;
+}
+
+
+@media all and (max-width: 800px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+    order:3;
+  }
+
+    .navigation_right {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+    order:2;
+  }
+  .brand {
+	order:1;
+	text-align: center;
+	width:100%;
+  }
+  .brand img {
+  	width:80%;
+  	height: auto;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+    .navigation_right a { 
+    text-align: center; 
+    padding: 10px;
+
+  }
+
+  
+  .navigation_right li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+
+.basic {
+  text-align: center; 
+  align-self:center; 
+  padding:20px 0px 20px 0px;
+}
+
+.headline {
+  color:#ffffff; 
+  text-align: center; 
+  align-self:center; 
+  padding:20px 0px 40px 0px;
+}
+.headline h1 {
+	font-size:3em; 
+	font-weight:700;
+	font-family: Bangers; 
+	letter-spacing: .1em; 
+}
+
+ul.countdown {
+  position: relative;
+  width: 420px;
+  list-style: none;
+  margin:0 auto;
+  display:flex;
+  flex-wrap: wrap;
+}
+ul.countdown li {
+  width: 100px;
+  height:82px;
+  display: inline-block;
+  text-align: center;
+  padding-top:18px;
+  flex-grow:1;
+}
+ul.countdown li span {
+  font-size: 42px;
+  font-weight: bold;
+  color:#ffffff;
+}
+
+@media all and (max-width: 400px) {
+ul.countdown {
+  width: 100%;
+}
+ul.countdown li {
+  width: 140px;
+}
+.hide {
+	display:none;
+}
+}
+
+a.button, input.button {
+	border-bottom: solid 3px #ffcf24 !important;
+	border-top: none;
+	border-left: none;
+	border-right:none;
+	color: #000000;
+	font-size:14px;
+	cursor: pointer;
+	padding: 8px 20px;
+	display: inline-block;
+	margin: 0px 0px;
+	text-transform: uppercase;
+	text-decoration:none;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	background-color:#ffe952;
+
+}
+a.button:hover, input.button:hover {
+	background-color:#ffcf24;
+}
+
+#sponsors {
+	background-color:#1d1d1d;
+padding-bottom:66px;
+padding-top:14px;
+	text-align: center;
+		width:100%;
+}
+
+#sponsors img {
+	padding:8px;
+}
+
+#sponsors h1 {
+	color:#6f6f6f;
+	border-bottom:solid 2px #2f2f2f;
+	font-weight: 500;
+	font-size:18px;
+	padding:4px;
+	margin-bottom:14px;
+	display:block;
+	text-align: center;
+}
+
+.art_wrapper {
+  width:800px;
+  margin:0 auto;
+}
+
+
+.art_container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+      align-content: flex-start;
+    justify-content: space-around;
+    overflow: hidden;
+    height: 220px;
+}
+
+.art_item {
+  width: 100px;  /* Or whatever */
+  height: 100px; /* Or whatever */
+  margin: 20px;  /* Magic! */
+  background-color:#cdcdcd;
+}
+
+.pin {
+  display: block;
+  background: #FEFEFE;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  margin: 12px 0px 0px 0px;
+  padding: 15px;
+  background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
+  opacity: 1;
+  width:160px;
+
+}
+
+.pin2 {
+  overflow:hidden;
+  display: inline-block;
+}
+
+.pin2::after {
+  content: url('images/speech-bubble2.png');
+  display:inline-block;
+  padding-bottom:4px;
+  padding-left:18px;
+}
+
+.pin3 {
+  overflow:hidden;
+  display: inline-block;
+}
+
+.pin3::after {
+  content: url('images/speech-bubble2.png');
+  display:inline-block;
+  padding-bottom:4px;
+  padding-left:40px;
+}
+
+.pin4 {
+  overflow:hidden;
+  display: inline-block;
+}
+
+.pin4::after {
+  content: url('images/speech-bubble2_flip.png');
+  display:inline-block;
+  padding-bottom:4px;
+  padding-left:84px;
+}
+
+.pin p {
+  color: #333;
+  margin: 0;
+  font-size:12px;
+  line-height:16px;
+  padding-bottom:0px;
+  padding-top:0px;
+  widows: 3;
+}
+
+.pin a {
+  color:#1c8997;
+}
+
+h2 {
+  color:#ffffff;
+  font-weight: 500;
+  font-size:28px;
+  padding-bottom:4px;
+  border-bottom: solid 2px #2d2d2d;
+  display:inline-block;
+}
+.pin_h1 {
+  font-family: 'Bangers', cursive;
+  font-size:34px;
+  color:#1c8997;
+  padding-bottom:8px;
+}
+
+
+@media all and (max-width: 800px) {
+.art_wrapper {
+  width:100%;
+  margin:0 auto;
+}
+
+  }
+
+</style>
 
 
 
@@ -29,65 +416,187 @@ user-scalable=true;">
 
 
 
-
-		<header id="masthead">
-        
-			<nav>
-			<div class="container">
-				<div class="brand">
-				<a href="index.html"><img src="images/stemcon-2017-logo.jpg" height="90" /></a>
-			</div>
-                <h1><span style="font-size:22px; font-weight:700;">APRIL 1, 2017</span><br />
-                	<span style="color:#ecc1c8;">STEM School &amp; Academy<br />
-                	8773  Ridgeline Blvd. 80129<br>
-                	Highlands Ranch, CO</span></h1>
-				<ul>
-					<li><a href="about.html">about</a></li>
-					<li><a href="mission.html">mission</a></li>
-					<li><a href="https://www.facebook.com/STEMCON"><img src="images/facebook_logo.png" width="20" /></a></li>
-				</ul> 
-			</div>
-			</nav>
-		</header>
-
-<div id="alert2">
+<div class="wrapper">
+<div class="gradient">
 <div class="container">
- <span style="font-weight:700;">Interested in becoming an artist / vendor?</span> <a href="https://docs.google.com/forms/d/e/1FAIpQLScv86KOA0vnif7A5ZyOBIX_BI7qN5DJ35-mGaISsGWtxMefNg/viewform" target="_blank" style="color:#cfcfcf;">Fill out the Booth Submission Form</a>.
+
+<ul class="navigation">
+   
+   <li><a href="mission.html">Mission</a></li>
+  <li><a href="artists.html">Artists</a></li>
+
+</ul>
+
+
+
+ <div class="brand">
+				<a href="index.html"><img src="images/stemfestlogo_yello.png" height="160" /></a>
+</div> 
+
+<ul class="navigation_right">
+  <li><a href="about.html">About</a></li>
+  <li class="hide"><a href="https://www.facebook.com/STEMCON"><img src="images/facebook_logo.png" width="20" /></a></li>
+  <li class="hide"><a href="mailto:stem-fest@stemhigh.org"><img src="images/emailicon.png" width="20" /></a></li>
+</ul>
+
+
+</div>
+
+
+<div class="headline">
+<h1 style="text-shadow: 2px 2px 4px #000000;">APRIL 1, 2017</h1>
+<span style="color:#ffffff; font-weight:bold; font-size:28px;">10AM-4PM</span><br>
+                	<span style="color:#cdcdcd;"><span style="font-weight: bold;">STEM School &amp; Academy</span><br />
+                	8773  Ridgeline Blvd. 80129<br>
+                	Highlands Ranch, CO</span>
+</div>
+
+<div style="background-color:rgba(0,0,0,0.5);">
+  <ul class="countdown">
+      <li style="background-color:rgba(50,95,195,.5);">
+        <span class="days" style="font-family:Bangers; letter-spacing: .1em; text-shadow: 2px 2px 4px #000000;"></span>
+        <p class="timeRefDays" style="color:#5e83d7;"></p>
+      </li>
+      <li style="background-color:rgba(160,65,182,.5);">
+        <span class="hours" style="font-family:Bangers; letter-spacing: .1em; text-shadow: 2px 2px 4px #000000;"></span>
+        <p class="timeRefHours" style="color:#bf80ce;"></p>
+      </li>
+      <li style="background-color:rgba(120,186,53,.5);">
+        <span class="minutes" style="font-family:Bangers; letter-spacing: .1em; text-shadow: 2px 2px 4px #000000;"></span>
+        <p class="timeRefMinutes" style="color:#abd87d;"></p>
+      </li>
+      <li style="background-color:rgba(46,146,161,.5);;">
+        <span class="seconds" style="font-family:Bangers; letter-spacing: .1em; text-shadow: 2px 2px 4px #000000;"></span>
+        <p class="timeRefSeconds" style="color:#6abcc8;"></p>
+      </li>
+	</ul>
+</div>
+
 </div>
 </div>
 
 
-		<section id="hero" class="clearfix">
-        <div class="container-small">
-       <div class="hero-img">
-<div style="border: solid 6px #cdcdcd; width:220px; height:200px;  padding-top:40px; text-align: center;background: -webkit-linear-gradient(left, rgba(255,0,0,0), #000000); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, rgba(255,0,0,0), #000000; /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, rgba(255,0,0,0), #000000; /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to right, rgba(255,0,0,0), #000000;">
-<iframe src="http://free.timeanddate.com/countdown/i5j1z4sa/n3273/cf12/cm0/cu4/ct1/cs0/ca0/cr0/ss0/cacfff/cpc000/pct/tcfff/fs100/szw320/szh135/tatSTEMFEST%202017/tacaaa/tptSTEMFEST%202017/tpc888/matCOUNTDOWN/mac888/mpc000/iso2017-04-01T10:00:00/pa20" allowTransparency="true" frameborder="0" width="182" height="97"></iframe>
+
+<div class="wrapper-main" style="background-color:#ffffff;">
+<div class="container">
+
+<div class="item">
+
+<div class="headline">
+<h1 style="color:#2d2d2d; font-size:36px;">Volunteer Today!</h1>
+                	<br><span style="color:#2d2d2d;">We need volunteers for this awesome <br>community event. It counts toward <br>your volunteer hours!</span><br><br>
+                	<a href="http://www.signupgenius.com/go/70a0e4fa8ab2aa13-stemfest" class="button">Volunteer Now!</a>
+</div>
+
+</div>
+<div class="item">
+
+<div class="headline">
+<h1 style="color:#2d2d2d; font-size:36px;">Calling all Artists!</h1>
+                	<br><span style="color:#2d2d2d;">Have something cool to sell? <br>Fill out the Booth Submission Form <br>to have a booth at StemFest!</span><br><br>
+                	<a href="https://docs.google.com/forms/d/1bp87hyfs6V-BZmXIf6cR3MVvQywkAve7r_mqOcMnDzQ/edit" class="button">Start Now!</a>
+</div>
+
+</div>
+
+</div>
+</div>
+
+<div style="background-color:#cdcdcd;">
+<div class="gradient2">
+<div class="basic" style="padding-bottom:0px;">
+<h1 style="color:#2d2d2d; font-size:36px;">Our Featured Artists</h1>
+                  
+</div>
+
+<div class="wrapper-main">
+<div class="art_wrapper">
+<div class="art_container">
+
+
+<div class="pin4">  
+    <div class="pin">
+      <span class="pin_h1">Music Production Learning Zone</span>
+      <p>
+        and Performance Stage
+      </p>
+    
+    </div>
+</div>
+
+<div class="pin3">
+    <div class="pin">
+      <span class="pin_h1">FoxyFunk Designs</span>
+      <p>Laser cut &ldquo;fandom&rdquo; themed jewelry by Meredith Funk
+
+<a href="http://www.foxyfunk.etsy.com" target="_blank">learn more</a>
+      </p>
+    </div>
 </div>
 
 
 
-       	<br><br>
-       	</div>
-			<div style="padding-top:40px;">
-<h2 style="font-size:20px;">Come see all the :</h2>
-       	<p style="font-size:16px;">AMAZING community artists!<br>
-       	COSPLAY CONTEST!!<br>
-       	Artist Presentations!<br>
-       	Delicious Food Trucks!!!</p>
+<div class="pin2">  
+    <div class="pin">
+      <span class="pin_h1">Middle School Student Government</span>
+      <p>
+        
+      </p>
+    </div>
+</div>
 
-		</div>
-           
-        </div>
-		</section>
+<div class="pin4">  
+    <div class="pin">
+      <span class="pin_h1">Melissa Piccone</span>
+      <p>
+        Adobe Certified Instructor by day, Sketch Artist by night!
+
+<a href="http://www.cyberelement.com/" target="_blank">learn more</a>
+      </p>
+    </div>
+</div>
+
+<div class="pin3">  
+    <div class="pin">
+      <span class="pin_h1">Places on 2017 Music Summer School</span>
+      <p>
+        Sign up for STEM Academy's after school music 2017-18
+      </p>
+    </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="basic" style="padding-top:0px;">
+<p>Want to be our next featured artist?  <a href="https://docs.google.com/forms/d/1bp87hyfs6V-BZmXIf6cR3MVvQywkAve7r_mqOcMnDzQ/edit">Register Now!</a></p>
+                  
+</div>
+</div>
+</div>
+
+<div class="basic" style="padding-bottom:10px;">
+<h1 style="color:#b9b9b9; font-size:36px;">Snapshots from 2016</h1>
+                  
+</div>
+<div class="w3-content w3-display-container" style="margin-bottom: 45px;">
+  <img class="mySlides photobooth" src="images/photo1.jpg">
+  <img class="mySlides photobooth" src="images/photo2.jpg">
+  <img class="mySlides photobooth" src="images/photo3.jpg">
+  <img class="mySlides photobooth" src="images/photo4.jpg">
+  <img class="mySlides photobooth" src="images/photo5.jpg">
+  <img class="mySlides photobooth" src="images/photo6.jpg">
+  <img class="mySlides photobooth" src="images/photo7.jpg">
+  <img class="mySlides photobooth" src="images/photo8.jpg">
+  <img class="mySlides photobooth" src="images/photo9.jpg">
+  <img class="mySlides photobooth" src="images/photo10.jpg">
+  <img class="mySlides photobooth" src="images/photo11.jpg">
 
 
-
-
-
-
+  <a class="w3-btn-floating w3-display-left photobooth" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right photobooth" onclick="plusDivs(1)">&#10095;</a>
+</div>
 
 <section id="sponsors">
 <div class="container">
@@ -99,6 +608,122 @@ user-scalable=true;">
 </div>
 </section>
 
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script>
+      
+      //Countdown plugin
+
+(function($) {
+    $.fn.countdown = function(options, callback) {
+
+      //custom 'this' selector
+      var thisEl = $(this);
+
+      //array of custom settings
+      var settings = { 
+        'date': null,
+        'format': null
+      };
+
+      //append the settings array to options
+      if(options) {
+        $.extend(settings, options);
+      }
+
+      //main countdown function
+      var countdown_proc = function () {
+
+        var eventDate = Date.parse(settings['date']) / 1000;
+        var currentDate = Math.floor($.now() / 1000);
+
+        if(eventDate <= currentDate) {
+          callback.call(this);
+          clearInterval(interval);
+        };
+
+        var seconds = eventDate - currentDate;
+
+        var days = Math.floor(seconds / (60 * 60 * 24)); //calculate the number of days
+        seconds -= days * 60 * 60 * 24; //update the seconds variable with no. of days removed
+
+        var hours = Math.floor(seconds / (60 * 60));
+        seconds -= hours * 60 * 60; //update the seconds variable with no. of hours removed
+
+        var minutes = Math.floor(seconds / 60);
+        seconds -= minutes * 60; //update the seconds variable with no. of minutes removed
+
+        //conditional Ss
+        if (days == 1) { thisEl.find(".timeRefDays").text("Day"); } else { thisEl.find(".timeRefDays").text("Days"); }
+        if (hours == 1) { thisEl.find(".timeRefHours").text("Hour"); } else { thisEl.find(".timeRefHours").text("Hours"); }
+        if (minutes == 1) { thisEl.find(".timeRefMinutes").text("Minute"); } else { thisEl.find(".timeRefMinutes").text("Minutes"); }
+        if (seconds == 1) { thisEl.find(".timeRefSeconds").text("Second"); } else { thisEl.find(".timeRefSeconds").text("Seconds"); }
+
+        //logic for the two_digits ON setting
+        if(settings['format'] == "on") {
+          days = (String(days).length >= 2) ? days : "0" + days;
+          hours = (String(hours).length >= 2) ? hours : "0" + hours;
+          minutes = (String(minutes).length >= 2) ? minutes : "0" + minutes;
+          seconds = (String(seconds).length >= 2) ? seconds : "0" + seconds;
+        }
+
+        //update the countdown's html values.
+        if(!isNaN(eventDate)) {
+          thisEl.find(".days").text(days);
+          thisEl.find(".hours").text(hours);
+          thisEl.find(".minutes").text(minutes);
+          thisEl.find(".seconds").text(seconds);
+        } else { 
+          alert("Invalid date. Here's an example: 12 Tuesday 2012 17:30:00");
+          clearInterval(interval); 
+        }
+      }
+
+      //run the function
+      countdown_proc();
+
+      //loop the function
+      interval = setInterval(countdown_proc, 1000);
+
+    }
+}) (jQuery);
+
+
+//Call countdown plugin
+$(".countdown").countdown({
+  date: "1 april 2017 10:30:00", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
+  format: "on" // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
+},
+
+function() {
+
+  // the code here will run when the countdown ends
+  alert("done!")
+
+});
+
+    </script>
+
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 
 	</body>
 </html>
