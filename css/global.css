@@ -29,7 +29,7 @@ body {
 }
 
 p {
-	padding:6px;
+	padding-top:6px;
 	line-height:1.6em;
 	color:#2d2d2d;
 }
@@ -1530,10 +1530,16 @@ a:target ~ a.cssbox_next {
 }
 
 .home_item {
-  width: 380px;  /* Or whatever */
+  width: 360px;  /* Or whatever */
   height: 200px; /* Or whatever */
   margin: 20px 10px 20px 10px;  /* Magic! */
   background-color:#e6e6e6;
+}
+
+.home_item2 {
+  width: 400px;  /* Or whatever */
+  height: 260px; /* Or whatever */
+  margin: 0px;  /* Magic! */
 }
 
 h1.home {
@@ -1555,6 +1561,12 @@ h1.home {
 .home_item {
   width: 100%;  /* Or whatever */
   margin: 20px 0px 0px 0px;  /* Magic! */
+}
+
+.home_item2 {
+  width: 100%;  /* Or whatever */
+  margin: 0px 0px 0px 0px;  /* Magic! */
+  border-bottom:solid 12px #000000;
 }
 }
 
@@ -1667,9 +1679,23 @@ h1.home {
   color:#ffffff; 
   text-align: center; 
   align-self:center; 
+  padding:0px 0px 30px 0px;
+}
+
+.home_space {
+  color:#ffffff; 
+  text-align: center; 
+  align-self:center; 
   padding:20px 0px 40px 0px;
 }
 .home_headline h1 {
+	font-size:3em; 
+	font-weight:700;
+	font-family: Bangers; 
+	letter-spacing: .1em; 
+}
+
+.home_space h1 {
 	font-size:3em; 
 	font-weight:700;
 	font-family: Bangers; 
@@ -1748,7 +1774,7 @@ a.button:hover, input.button:hover {
       align-content: flex-start;
     justify-content: space-around;
     overflow: hidden;
-    height: 220px;
+    height: 170px;
 }
 
 .art_item {
