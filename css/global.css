@@ -177,7 +177,7 @@ header {
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
   align-items:center;
-  width:300px;
+  width:340px;
 }
 
 .navigation a {
@@ -1168,7 +1168,7 @@ select option:checked:after {
 	background: #FEFEFE;
 	border: 2px solid #FAFAFA;
 	box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
-	margin: 12px 0px 0px 0px;
+	margin: 2px 0px 0px 0px;
 	-webkit-column-break-inside: avoid;
 	-moz-column-break-inside: avoid;
 	column-break-inside: avoid;
@@ -1232,6 +1232,7 @@ select option:checked:after {
 	padding-bottom:4px;
 	border-bottom: solid 2px #2d2d2d;
 	display:inline-block;
+	margin-bottom:8px;
 }
 #artists h1 {
 	font-family: 'Bangers', cursive;
@@ -1792,7 +1793,7 @@ a.button:hover, input.button:hover {
   padding: 15px;
   background: -webkit-linear-gradient(45deg, #FFF, #F9F9F9);
   opacity: 1;
-  width:150px;
+  width:140px;
 
 }
 
