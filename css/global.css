@@ -177,7 +177,7 @@ header {
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
   align-items:center;
-  width:340px;
+  width:460px;
 }
 
 .navigation a {
