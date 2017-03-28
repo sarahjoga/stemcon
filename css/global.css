@@ -1160,7 +1160,6 @@ select option:checked:after {
 	-moz-column-gap: 10px;
 	column-count: 2;
 	column-gap: 15px;
-	column-fill: auto;
 }
 
 #artists .pin {
