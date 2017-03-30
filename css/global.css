@@ -1868,3 +1868,69 @@ h2 {
   margin:0 auto;
 }
 }
+
+.starwars
+{
+	background-image:url(../images/starwars.png); 
+	background-size:contain; 
+	background-repeat: no-repeat; 
+	background-position: left; 
+	width:800px; 
+	height:200px; 
+	margin:20px; 
+	background-color:#eadfd6;
+}
+
+.starwarstext {
+	text-align: right; 
+	margin-left:150px; 
+	margin-right:24px; 
+	margin-top:20px;
+}
+
+	.starwarstext2 {
+	color:#000000; 
+	float:right; 
+	width:70%;
+	line-height: 1.4em;
+}
+
+.starwars h1 {
+	color:#2d2d2d; 
+	font-size:48px; 
+	letter-spacing: 2px; 
+	font-family: 'Bangers', cursive;
+	padding-bottom:12px;
+}
+
+@media all and (max-width: 680px) {
+	.starwars h1 {
+		font-size:40px;
+		padding-bottom:0px;
+	}
+	.xhide-mob {
+		display: none;
+	}
+	.starwarstext {
+	text-align: right; 
+	margin-left:150px; 
+	margin-right:24px; 
+	margin-top:20px;
+}
+	
+
+	.starwarstext2 {
+	color:#000000; 
+	float:right; 
+	width:100%;
+	line-height: 1.4em;
+}
+}
+	@media all and (max-width: 500px) {
+
+	.hide-mob {
+		display: none;
+	}
+	}
+
+
